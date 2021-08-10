@@ -57,10 +57,12 @@ sudo docker-compose -f server/docker-compose.yml up
 
 If you do not have the Docker or docker compose installed on your computer:
 
-[Docker](https://www.docker.com/get-started)
+[Docker](https://www.docker.com/get-started), 
 [Docker compose](https://docs.docker.com/compose/install/)
 
+
 using localhost:8080 for MySQL
+
 using localhost:80 for stress detection API
 
 ## Reference
