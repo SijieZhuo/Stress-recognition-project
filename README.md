@@ -45,25 +45,31 @@ Finally, connect the watch to the app that we already downloaded, click the 'sta
 
 ## How to run
 
-## Get Started
 ```
-# Step 1
+- Step 1
 git clone git@github.com:SiyuQian/Stress-recognition-project.git
-# Step 2
+- Step 2
 cd Stress-recognition-project
-# Step 3
+- Step 3
 sudo docker-compose -f server/docker-compose.yml up
+- Step 4
+migrate the table using the following command:
+sudo docker exec -it [the name of the mysql web container] bash
+python manage.py migrate
 ```
 
+Once the above code is executed, after running the phone with the watch, you should be able to see the data appear in the database
+
 If you do not have the Docker or docker compose installed on your computer:
+
 
 [Docker](https://www.docker.com/get-started), 
 [Docker compose](https://docs.docker.com/compose/install/)
 
-
+```
 using localhost:8080 for MySQL
-
 using localhost:80 for stress detection API
+```
 
 ## Reference
 1.https://en.wikipedia.org/wiki/Phishing#:~:text=Phishing%20is%20the%20fraudulent%20attempt,entity%20in%20a%20digital%20communication.  
