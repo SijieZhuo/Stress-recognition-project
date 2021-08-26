@@ -45,18 +45,27 @@ Finally, connect the watch to the app that we already downloaded, click the 'sta
 
 ## How to run
 
-```
-- Step 1
-git clone git@github.com:SiyuQian/Stress-recognition-project.git
-- Step 2
-cd Stress-recognition-project
-- Step 3
-sudo docker-compose -f server/docker-compose.yml up
-- Step 4
+**Step 1**
+
+``git clone git@github.com:SijieZhuo/Stress-recognition-project.git``
+
+**Step 2**
+
+``cd Stress-recognition-project``
+
+**Step 3**
+
+``sudo docker-compose -f server/docker-compose.yml up``
+
+**Step 4**
+
 migrate the table using the following command:
-sudo docker exec -it [the name of the mysql web container] bash
-python manage.py migrate
-```
+
+``sudo docker exec -it [the name of the mysql web container] bash``
+(p.s. the web container should be named server_web_1)
+
+``python manage.py migrate``
+
 
 Once the above code is executed, after running the phone with the watch, you should be able to see the data appear in the database
 
